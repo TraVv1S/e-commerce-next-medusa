@@ -101,21 +101,21 @@ const EditAddress: React.FC<EditAddressProps> = ({
             onClick={open}
           >
             <Edit />
-            Edit
+            Изменить
           </button>
           <button
             className="text-small-regular text-ui-fg-base flex items-center gap-x-2"
             onClick={removeAddress}
           >
             {removing ? <Spinner /> : <Trash />}
-            Remove
+            Удалить
           </button>
         </div>
       </div>
 
       <Modal isOpen={state} close={close}>
         <Modal.Title>
-          <Heading className="mb-2">Edit address</Heading>
+          <Heading className="mb-2">Изменить адрес</Heading>
         </Modal.Title>
         <form action={formAction}>
           <Modal.Body>
@@ -205,9 +205,9 @@ const EditAddress: React.FC<EditAddressProps> = ({
                 onClick={close}
                 className="h-10"
               >
-                Cancel
+                Отмена
               </Button>
-              <SubmitButton>Save</SubmitButton>
+              <SubmitButton>Сохранить</SubmitButton>
             </div>
           </Modal.Footer>
         </form>

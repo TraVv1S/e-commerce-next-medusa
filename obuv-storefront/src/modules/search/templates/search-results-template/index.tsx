@@ -36,7 +36,7 @@ const SearchResultsTemplate = ({
           href="/store"
           className="txt-medium text-ui-fg-subtle hover:text-ui-fg-base"
         >
-          Clear
+          Очистить
         </LocalizedClientLink>
       </div>
       <div className="flex flex-col small:flex-row small:items-start p-6">
@@ -53,7 +53,7 @@ const SearchResultsTemplate = ({
             </div>
           </>
         ) : (
-          <Text className="ml-8 small:ml-14 mt-3">No results.</Text>
+          <Text className="ml-8 small:ml-14 mt-3">Нет результатов.</Text>
         )}
       </div>
     </>

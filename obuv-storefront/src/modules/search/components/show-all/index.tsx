@@ -14,15 +14,15 @@ const ShowAll = () => {
   if (hits.length === 0) {
     return (
       <Container className="flex gap-2 justify-center h-fit py-2">
-        <Text>No results found.</Text>
+        <Text>Нет результатов по Вашему запросу.</Text>
       </Container>
     )
   }
 
   return (
     <Container className="flex sm:flex-col small:flex-row gap-2 justify-center items-center h-fit py-4 small:py-2">
-      <Text>Showing the first {width > 640 ? 6 : 3} results.</Text>
-      <InteractiveLink href={`/results/${query}`}>View all</InteractiveLink>
+      <Text>Показать первые {width > 640 ? 6 : 3} результатов.</Text>
+      <InteractiveLink href={`/results/${query}`}>Показать все</InteractiveLink>
     </Container>
   )
 }

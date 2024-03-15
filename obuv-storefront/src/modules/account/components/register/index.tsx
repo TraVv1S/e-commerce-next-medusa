@@ -57,31 +57,31 @@ const Register = ({ setCurrentView }: Props) => {
         </div>
         <ErrorMessage error={message} />
         <span className="text-center text-ui-fg-base text-small-regular mt-6">
-          By creating an account, you agree to OBUV Store&apos;s{" "}
+          Создавая аккаунт вы соглашаетесь с{" "}
           <LocalizedClientLink
             href="/content/privacy-policy"
             className="underline"
           >
-            Privacy Policy
+            политикой безопасности
           </LocalizedClientLink>{" "}
-          and{" "}
+          и{" "}
           <LocalizedClientLink
             href="/content/terms-of-use"
             className="underline"
           >
-            Terms of Use
+            Правилами использования
           </LocalizedClientLink>
           .
         </span>
-        <SubmitButton className="w-full mt-6">Join</SubmitButton>
+        <SubmitButton className="w-full mt-6">Присоединиться</SubmitButton>
       </form>
       <span className="text-center text-ui-fg-base text-small-regular mt-6">
-        Already a member?{" "}
+        Уже зарегистрированы?{" "}
         <button
           onClick={() => setCurrentView(LOGIN_VIEW.SIGN_IN)}
           className="underline"
         >
-          Sign in
+          Войти
         </button>
         .
       </span>

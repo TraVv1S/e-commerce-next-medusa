@@ -77,7 +77,7 @@ const AccountInfo = ({
           )}
         >
           <Badge className="p-2 my-4" color="green">
-            <span>{label} updated succesfully</span>
+            <span>{label} успешно обновлён</span>
           </Badge>
         </Disclosure.Panel>
       </Disclosure>
@@ -119,7 +119,7 @@ const AccountInfo = ({
                 className="w-full small:max-w-[140px]"
                 type="submit"
               >
-                Save changes
+                Сохранить изменения
               </Button>
             </div>
           </div>

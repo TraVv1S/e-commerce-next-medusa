@@ -15,9 +15,9 @@ const Overview = ({ customer, orders }: OverviewProps) => {
     <div>
       <div className="hidden small:block">
         <div className="text-xl-semi flex justify-between items-center mb-4">
-          <span>Hello {customer?.first_name}</span>
+          <span>Привет {customer?.first_name}</span>
           <span className="text-small-regular text-ui-fg-base">
-            Signed in as:{" "}
+            Войти как:{" "}
             <span className="font-semibold">{customer?.email}</span>
           </span>
         </div>
@@ -25,13 +25,13 @@ const Overview = ({ customer, orders }: OverviewProps) => {
           <div className="flex flex-col gap-y-4 h-full col-span-1 row-span-2 flex-1">
             <div className="flex items-start gap-x-16 mb-6">
               <div className="flex flex-col gap-y-4">
-                <h3 className="text-large-semi">Profile</h3>
+                <h3 className="text-large-semi">Профиль</h3>
                 <div className="flex items-end gap-x-2">
                   <span className="text-3xl-semi leading-none">
                     {getProfileCompletion(customer)}%
                   </span>
                   <span className="uppercase text-base-regular text-ui-fg-subtle">
-                    Completed
+                    Выполнено
                   </span>
                 </div>
               </div>
@@ -43,7 +43,7 @@ const Overview = ({ customer, orders }: OverviewProps) => {
                     {customer?.shipping_addresses?.length || 0}
                   </span>
                   <span className="uppercase text-base-regular text-ui-fg-subtle">
-                    Saved
+                    Сохранено
                   </span>
                 </div>
               </div>
@@ -51,7 +51,7 @@ const Overview = ({ customer, orders }: OverviewProps) => {
 
             <div className="flex flex-col gap-y-4">
               <div className="flex items-center gap-x-2">
-                <h3 className="text-large-semi">Recent orders</h3>
+                <h3 className="text-large-semi">Последние заказы</h3>
               </div>
               <ul className="flex flex-col gap-y-4">
                 {orders && orders.length > 0 ? (
@@ -63,12 +63,12 @@ const Overview = ({ customer, orders }: OverviewProps) => {
                         >
                           <Container className="bg-gray-50 flex justify-between items-center p-4">
                             <div className="grid grid-cols-3 grid-rows-2 text-small-regular gap-x-4 flex-1">
-                              <span className="font-semibold">Date placed</span>
+                              <span className="font-semibold">Дата размещения</span>
                               <span className="font-semibold">
-                                Order number
+                                Номер заказа
                               </span>
                               <span className="font-semibold">
-                                Total amount
+                                Общее количество
                               </span>
                               <span>
                                 {new Date(order.created_at).toDateString()}
@@ -84,7 +84,7 @@ const Overview = ({ customer, orders }: OverviewProps) => {
                             </div>
                             <button className="flex items-center justify-between">
                               <span className="sr-only">
-                                Go to order #{order.display_id}
+                                Перейти к заказу #{order.display_id}
                               </span>
                               <ChevronDown className="-rotate-90" />
                             </button>
@@ -94,7 +94,7 @@ const Overview = ({ customer, orders }: OverviewProps) => {
                     )
                   })
                 ) : (
-                  <span>No recent orders</span>
+                  <span>Последние заказы отстутствуют</span>
                 )}
               </ul>
             </div>
